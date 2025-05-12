@@ -37,8 +37,8 @@ class MomentumAssetAllocationStrategy(QCAlgorithm):
             self.data[symbol] = self.ROC(symbol, period, Resolution.Daily)
 
         # setting rebalance period
-        # self.recent_week = -1
-        self.next_rebalance_date = self.Time
+        self.recent_month = -1
+        # self.next_rebalance_date = self.Time
 
     
 
@@ -83,16 +83,16 @@ class MomentumAssetAllocationStrategy(QCAlgorithm):
 
             return
 
-        ### This is for monthly rebalance
-        # if self.Time.month == self.recent_month:
+        ## This is for monthly rebalance
+        if self.Time.month == self.recent_month:
 
-        #     return
+            return
 
-        # self.recent_month = self.Time.month
+        self.recent_month = self.Time.month
 
-        ### This is for weekly rebalance
-        if self.Time >= self.next_rebalance_date:
-            self.next_rebalance_date = self.Time + timedelta(days=7)
+        # ### This is for weekly rebalance
+        # if self.Time >= self.next_rebalance_date:
+        #     self.next_rebalance_date = self.Time + timedelta(days=7)
 
         selected = {symbol: roc.Current.Value for symbol, roc in self.data.items() if symbol in data and roc.IsReady}
 
