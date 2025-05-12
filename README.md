@@ -5,7 +5,7 @@
 This repository contains the implementation of a dynamically-weighted momentum-based asset allocation strategy developed for the CUATS 2025 Coding Challenge by Team KPZ Trading.
 
 
-🚀 Strategy Overview
+#### 🚀 Strategy Overview
 
 The strategy identifies and allocates capital to top-performing assets using Rate of Change (ROC) as a momentum signal. It dynamically adjusts portfolio weights based on relative strength and market regime:
 
@@ -17,7 +17,7 @@ The strategy identifies and allocates capital to top-performing assets using Rat
 
     Asset Universe: A diversified mix of ETFs, tech stocks, consumer staples, utilities, and commodities.
 
-📊 Performance Highlights (Jan 2020 – Present)
+#### 📊 Performance Highlights (Jan 2020 – Present)
 
 Based on backtests (see CUATS_Challenge_KPZtrading.pdf):
 
@@ -29,7 +29,7 @@ Based on backtests (see CUATS_Challenge_KPZtrading.pdf):
 
     Alpha: 0.216
 
-🧠 Core Features
+#### 🧠 Core Features
 
     Top momentum assets selected based on short-term ROC (3-day period).
 
@@ -39,7 +39,7 @@ Based on backtests (see CUATS_Challenge_KPZtrading.pdf):
 
     Built with QuantConnect Lean Engine.
 
-📁 Files
+#### 📁 Files
 
     MomentumAssetAllocationStrategy.py: Core algorithm implementation.
 
