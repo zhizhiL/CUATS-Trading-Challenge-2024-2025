@@ -3,6 +3,7 @@
 ### 📈 Dynamically-Weighted Momentum Asset Allocation Strategy
 
 This repository contains the implementation of a dynamically-weighted momentum-based asset allocation strategy developed for the CUATS 2025 Coding Challenge by Team KPZ Trading.
+
 🚀 Strategy Overview
 
 The strategy identifies and allocates capital to top-performing assets using Rate of Change (ROC) as a momentum signal. It dynamically adjusts portfolio weights based on relative strength and market regime:
